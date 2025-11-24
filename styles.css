@@ -90,3 +90,18 @@ input[type="text"] {
 .oscuro button:hover {
   background-color: #16a085;
 }
+
+/*Ejercicio 12*/
+#cuadrado {
+  width: 100px;
+  height: 100px;
+  background-color: #e74c3c;
+  margin: 20px 0;
+  position: relative;
+  transition: left 2s ease-in-out;
+  left: 0;
+}
+
+#cuadrado.mover {
+  left: 500px;
+}

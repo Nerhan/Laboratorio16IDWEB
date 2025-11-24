@@ -3,45 +3,164 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laboratorio 16</title>
+  <title>Laboratorio 16 - Eventos y JSON</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
-    <h1>Laboratorio 16 - JavaScript</h1>
+    <h1>Laboratorio 16 - JavaScript: Eventos y JSON</h1>
   </header>
 
   <main>
-    <!-- Ejercicio 3 y 4 -->
+
+    <!-- 3 y 4 -->
     <section class="ejercicio">
-      <h2>Ejercicio 3 y 4 - Cambiar texto (alternar)</h2>
+      <h2>3-4. Cambiar texto (alternar)</h2>
       <button id="btnTexto">Cambiar texto</button>
       <p id="parrafoTexto">Texto original</p>
     </section>
 
-    <!-- Ejercicio 5 -->
+    <!-- 5 -->
     <section class="ejercicio">
-      <h2>Ejercicio 5 - Modo oscuro</h2>
+      <h2>5. Modo oscuro</h2>
       <button id="btnModoOscuro">Activar/Desactivar modo oscuro</button>
     </section>
 
-    <!-- Ejercicio 6 -->
+    <!-- 6 -->
     <section class="ejercicio">
-      <h2>Ejercicio 6 - Contador interactivo</h2>
+      <h2>6. Contador interactivo</h2>
       <button id="btnDecrementar">-</button>
       <span id="contador">0</span>
       <button id="btnIncrementar">+</button>
       <p id="mensajeContador" class="mensaje"></p>
     </section>
 
-    <!-- Ejercicio 7 -->
+    <!-- 7 -->
     <section class="ejercicio">
-      <h2>Ejercicio 7 - Lista dinámica</h2>
-      <input type="text" id="inputItem" placeholder="Escribe un elemento y presiona Enter o Añadir">
+      <h2>7. Lista dinámica</h2>
+      <input type="text" id="inputItem" placeholder="Escribe un elemento">
       <button id="btnAgregar">Añadir</button>
       <button id="btnBorrarUltimo">Borrar último</button>
       <ul id="listaDinamica"></ul>
+    </section>
+
+    <!-- 8 -->
+    <section class="ejercicio">
+      <h2>8. Validación de formulario</h2>
+      <form id="formValidar">
+        <input type="text" id="nombre" placeholder="Nombre"><br><br>
+        <input type="email" id="correo" placeholder="Correo"><br><br>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- 9 -->
+    <section class="ejercicio">
+      <h2>9. Galería de imágenes</h2>
+      <div id="grande" style="text-align:center; margin:20px 0;"></div>
+      <img class="mini" src="subnautica.jpeg" width="100" style="cursor:pointer; margin:5px;">
+      <img class="mini" src="hola.jpeg" width="100" style="cursor:pointer; margin:5px;">
+      <img class="mini" src="adios.jpg" width="100" style="cursor:pointer; margin:5px;">
+    </section>
+
+    <!-- 10 -->
+    <section class="ejercicio">
+      <h2>10. Tabla dinámica</h2>
+      <button id="crearTabla">Generar tabla de productos</button>
+      <div id="contenedorTabla"></div>
+    </section>
+
+    <!-- 11 -->
+    <section class="ejercicio">
+      <h2>11. Delegación: eliminar al hacer clic</h2>
+      <ul id="listaEliminar">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+      </ul>
+    </section>
+
+    <!-- 12 -->
+    <section class="ejercicio">
+      <h2>12. Animación con clase</h2>
+      <div id="cuadrado" style="width:100px; height:100px; background:#e74c3c; margin:20px 0;"></div>
+      <button id="btnAnimar">Mover cuadrado</button>
+      <button id="btnReiniciar">Reiniciar</button>
+    </section>
+
+    <!-- 13 -->
+    <section class="ejercicio">
+      <h2>13. CRUD con localStorage</h2>
+      <form id="formUsuario">
+        <input type="text" id="nombreUsuario" placeholder="Nombre" required>
+        <input type="number" id="edadUsuario" placeholder="Edad" required>
+        <button type="submit">Agregar usuario</button>
+      </form>
+      <table id="tablaUsuarios">
+        <thead>
+          <tr><th>Nombre</th><th>Edad</th><th>Acciones</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- 15 -->
+    <section class="ejercicio">
+      <h2>15. JSON → Objeto → Mostrar en DOM</h2>
+      <p id="resultadoParse"></p>
+    </section>
+
+    <!-- 16 -->
+    <section class="ejercicio">
+      <h2>16. Lista de productos desde arreglo</h2>
+      <ul id="listaProductos"></ul>
+    </section>
+
+    <!-- 17 -->
+    <section class="ejercicio">
+      <h2>17. Guardar y recuperar de localStorage</h2>
+      <div id="perfilGuardado"></div>
+    </section>
+
+    <!-- 18 - LIBROS DESDE JSON -->
+    <section class="ejercicio">
+      <h2>18. JSON de libros → Tabla dinámica</h2>
+      <button id="btnLibros">Generar tabla de libros</button>
+      <div id="contenedorLibros"></div>
+    </section>
+
+    <!-- 19 - MODIFICAR JSON -->
+    <section class="ejercicio">
+      <h2>19. Modificar JSON y volver a convertir</h2>
+      <button id="btnModificarJSON">Ejecutar (ver consola)</button>
+    </section>
+
+    <!-- 20 - INPUT → JSON -->
+    <section class="ejercicio">
+      <h2>20. Input → Objeto → JSON en consola</h2>
+      <input type="text" id="nombreUsuario20" placeholder="Escribe tu nombre">
+      <button id="btnGuardar20">Guardar como JSON</button>
+      <p id="feedback20"></p>
+    </section>
+
+    <!-- 21 -->
+    <section class="ejercicio">
+      <h2>21. Lista de tareas desde JSON</h2>
+      <ul id="listaTareas"></ul>
+    </section>
+
+    <!-- 22 -->
+    <section class="ejercicio">
+      <h2>22. Simulador de perfil persistente</h2>
+      <form id="formPerfil">
+        <input type="text" id="nombrePerfil" placeholder="Nombre" required>
+        <input type="number" id="edadPerfil" placeholder="Edad" required>
+        <input type="text" id="paisPerfil" placeholder="País" required>
+        <button type="submit">Guardar perfil</button>
+      </form>
+      <div id="perfilMostrado"></div>
     </section>
 
   </main>
